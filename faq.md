@@ -1,18 +1,18 @@
 # FAQ
 
-#### When downloading a library, the client hangs at "connecting server"
+#### 当下载一个库，客户端显示"connecting server"
 
-First, you can check the ccnet.log in client (``~/.ccnet/logs/ccnet.log`` for
-Linux, ``C:/users/your_name/ccnet/logs/ccnet.log`` for Windows) to see what's wrong.
+首先检查ccnet.log客户端登录日志   (``~/.ccnet/logs/ccnet.log`` for
+Linux, ``C:/users/your_name/ccnet/logs/ccnet.log`` for Windows) 看看有没有报错信息.
 
-Possible reasons:
+可能导致的错误:
 
 * Miss config of  <code>SERVICE_URL</code>: Check whether the value of is set correctly in server's <code>ccnet.conf</code>.
-* Firewall: Ensure the firewall is configured properly. See [[Firewall Settings for Seafile Server ]]
+* 防火墙: 确认防火墙允许Seafile服务端口，如果阻止请配置允许.
 
 Trouble shooting:
 
-* Manually telnet to see if you can connect: <code>telnet your-server-IP-or-domain 10001</code>
+* 用 telnet 试试能否正常连接: <code>telnet your-server-IP-or-domain 10001</code>
 
 #### Failed to upload/download file online
 
